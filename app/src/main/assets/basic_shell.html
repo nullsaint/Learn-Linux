@@ -1,0 +1,83 @@
+
+<head>
+
+</head>
+<body>
+<div style="background-color:#F50057;padding:15px;">
+<h3 style="color:white;">Basics of Shell Programming</h3></div>
+<ol>
+    <li>To get a Linux shell, you need to start a terminal.</li>&nbsp;
+    <li>To see what shell you have,<strong> run: echo $SHELL</strong>.</li>&nbsp;
+    <li>In Linux, the dollar sign (<strong>$</strong>) stands for a shell variable.</li>&nbsp;
+    <li>The &#8216;<strong>echo</strong>&#8216; command just returns whatever you type in.</li>&nbsp;
+    <li>The pipeline instruction (<strong>|</strong>) comes to rescue, when chaining several commands.</li>&nbsp;
+    <li>Linux commands have their own syntax, Linux won&#8217;t forgive you whatsoever is the mistakes.
+        If you get a command wrong, you won&#8217;t flunk or damage anything, but it won&#8217;t work.</li>&nbsp;
+    <li><strong>#!/bin/sh</strong> – It is called shebang. It is written at the top of a shell script and it passes the instruction to the program <strong>/bin/sh</strong>.</li>
+</ol>
+
+
+<p style="border-top: 3px solid #6A1B9A; border-bottom: 3px solid #6A1B9A;"><b>Writing your First Script</b>
+<pre>#!/bin/bash
+# My first script
+
+echo "Hello World!"</pre>
+<p>Save the above lines on a text file, make it executable and run it, as described above.</p>
+<h4>Sample Output</h4>
+<pre>Hello World!</pre>
+<p>In the above code.</p>
+<pre>#!/bin/bash (is the shebang.)
+# My first script (is comment, anything following '#' is a comment)
+echo “Hello World!” (is the main part of this script)</pre>
+<p style="border-top: 3px solid #6A1B9A; border-bottom: 3px solid #6A1B9A;"><b>Writing your Second Script</b>
+<p>OK time to move to the next script. This script will tell you, your's <strong>username</strong> and list the running <strong>processes</strong>.</p>
+<pre>#! /bin/bash
+echo "Hello $USER"
+echo "Hey i am" $USER "and will be telling you about the current processes"
+echo "Running processes List"
+ps</pre>
+<p>Create a file with above codes, save it to anything you want, but with extension "<strong>.sh</strong>", make it executable and run it, from you terminal.</p>
+<h4>Sample Output</h4>
+<pre>Hello linux
+Hey i am linux and will be telling you about the current processes
+Running processes List
+  PID TTY          TIME CMD
+ 1111 pts/0    00:00:00 bash
+ 1287 pts/0    00:00:00 sh
+ 1288 pts/0    00:00:00 ps</pre>
+<p><strong>Was this cool</strong>? Writing script is as simple as getting an idea and writing pipelined commands. There are some restrictions, too. Shell scripts are excellent for concise filesystem operations and scripting the combination of existing functionality in filters and command line tools via pipes.</p>
+<p>When your needs are greater  whether in <strong>functionality</strong>, <strong>robustness</strong>, <strong>performance</strong>, <strong>efficiency</strong> etc  then you can move to a more full-featured language.</p>
+<p>If you already know <strong>C</strong>/<strong>Perl</strong>/<strong>Python</strong> programming language or any other programming language, learning the scripting language won't be much difficult.</p>
+
+<p style="border-top: 3px solid #6A1B9A; border-bottom: 3px solid #6A1B9A;"><b>Writing your Third Script</b>
+
+<p>Moving to, write our third and last script for this article. This script acts as an interactive script. Why don't you, yourself execute this simple yet interactive script and tell us how you felt.</p>
+<pre>#! /bin/bash
+echo "Hey what's Your First Name?";
+read a;
+echo "welcome Mr./Mrs. $a, would you like to tell us, Your Last Name";
+read b;
+echo "Thanks Mr./Mrs. $a $b for telling us your name";
+echo "*******************"
+echo "Mr./Mrs. $b, it's time to say you good bye"</pre>
+<h4>Sample Output</h4>
+<pre>Hey what's Your First Name?
+John
+welcome Mr./Mrs. John, would you like to tell us, Your Last Name
+Smith
+Thanks Mr./Mrs. John Smith for telling us your name
+******************************************************
+Mr./Mrs. Smith, it's time to say you good bye</pre>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</body>

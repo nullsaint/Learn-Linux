@@ -1,0 +1,142 @@
+<head>
+</head>
+
+<body>
+
+<div style="background-color:#FF3D00;padding:15px;">
+    <h2 style="color:white;"> Linux Vs Windows </h2></div>
+
+<p>Now, that you have installed Linux, it's time to make the big switch from your Windows or Max OS operating system.
+<p>Mac OS uses a UNIX core. Your switch from Mac OS to Linux will be relatively smooth.
+<p>It's the Windows users who will need some adjusting.&nbsp; &nbsp;In this tutorial will be introduce the Linux OS and compare it with Windows.
+
+<p>Linux File System
+
+<p>In Microsoft Windows, files are stored in folders under different data drives like C: D: E: .
+<p>But, in&nbsp;<strong>Linux, files are ordered in a tree structure starting with the root directory</strong>.
+<p>&nbsp;This root directory can be considered as the start of the file system and it further branches out various other subdirectories. The root
+    is denoted with a forward slash '/'.
+<p>A general tree file system on your UNIX may look like this.
+<p style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <img width="100%" src=img/FolderStructure.png />
+
+<h2 style="color:teal;border-bottom: 3px solid gray;"> Types of Files</h2>
+<p>In Linux and UNIX, everything is a file. Directories are files, files are files, and devices like Printer, mouse, keyboard etc.are
+    files.
+<p>Let's look into the File types in more detail '
+<h3 style="color:teal;border-bottom: 3px solid gray;"> <strong>General Files</strong></h3>
+<p>General Files also called as Ordinary files. They can contain image, video, program or simply text. They can be in ASCII or
+    a Binary format. These are the most commonly &nbsp;used files by Linux Users
+<h3 style="color:teal;border-bottom: 3px solid gray;"> &nbsp;<strong>Directory Files</strong></h3>
+<p> <strong>&nbsp;</strong>These files are a warehouse for other file types. You can have a directory file within a directory
+    (sub-directory).You can take them as&nbsp;&nbsp; 'Folders' found in Windows operating system.
+<h3  style="color:teal;border-bottom: 3px solid gray;"> &nbsp;<strong>Device Files:</strong></h3>
+<p>In MS Windows, devices like Printers, CD-ROM and hard drives are represented as drive letters like G: H:. In Linux,
+    there are represented as files.&nbsp; &nbsp;For example, if the first SATA hard drive had three primary partitions,
+    they would be named and numbered as /dev/s<em>da1</em>, /dev/sda2 and /dev/sda3.
+
+<p> <strong>Note</strong>: All device files reside in the directory /dev/
+<p>All the above file types (including devices) have permissions, which allow a user to read, edit or execute
+    (run) them. This is a powerful Linux/Unix feature. Access restrictions can be applied for different kinds
+    of users, by changing permissions.
+<h2 style="color:teal; border-bottom: 3px solid gray;"> Users in Linux</h2>
+<p>There are 3 types of users in Linux
+<ol>
+    <li>Regular</li>
+    <li>Administrative(root)</li>
+    <li>Service</li>
+</ol>
+<h3 style="color:teal;border-bottom: 3px solid gray;"> Regular User</h3>
+<p>A regular user account is created for you when you install Ubuntu on your system. All your files and
+    folders are stored in /home/
+    which is your home directory. As a regular user, you do not have access to directories of other
+    users.
+<h3 style="color:teal;border-bottom: 3px solid gray;"> Root User</h3>
+<p>Other than your regular account another user account called root is created at the time of installation.&nbsp;
+    The root account is a <strong>super user</strong> who can access restricted files, install software
+    and has administrative privileges. Whenever you want to install software, make changes to system
+    files or perform any administrative task on Linux; you need to log in as a root user. Otherwise,
+    for general tasks like playing music and browsing the internet you can use your regular account.
+<h3 style="color:teal;border-bottom: 3px solid gray;"> Service user</h3>
+<p>Linux is widely used as a Server Operating System. Services such as Apache,
+    Squid, mail, etc. have their own&nbsp;individual&nbsp;service accounts. &nbsp;Having service
+    accounts increases security of your computer. Linux can allow or deny access to various resources depending on the service.
+<p>Note:
+<ol>
+    <li style="margin-left: 0.5in; ">&nbsp;You will not see service accounts in Ubuntu Desktop version.</li>
+    <li style="margin-left: 0.5in; ">&nbsp;Regular accounts are called standard accounts in Ubuntu Desktop</li>
+</ol>
+<h2 style="color:teal; border-bottom: 3px solid gray;"> File Name Convention</h2>
+<p>&nbsp;In Windows, you cannot have 2 files with the same name in the same folder. See
+    below -
+<p style="text-align: center; ">
+    <img width="100%" src=img/WindowsError.png />
+    </p>
+<p>While in Linux, you can have 2 files with the same name in the same directory,
+    provided they use different cases.
+<p style="text-align: center; ">
+    <img width="100%" src=img/LinuxFileNaming.png />
+<h2 style="color:teal; border-bottom: 3px solid gray;"> The HOME Directory</h2>
+<p>For every user in Linux, a directory is created as <strong>/home/</strong>
+<p>Consider, a regular user account "Tom". He can store his personal
+    files and directories in the directory "/home/tom". He can't
+    save files outside his user directory and does not have access
+    to directories of other users. For instance, he cannot access
+    directory "/home/jerry" of another user account"Jerry".
+<p>The concept is the similar to C:\Documents and Settings in
+    Windows.
+<p>When you boot the Linux operating system, your user directory
+    (from the above example /home/tom) is the <strong>default working directory</strong>.
+    Hence the directory "/home/tom is also called the <strong>Home directory</strong> which
+    is a misnomer.
+<p>The working directory can be changed using some commands
+    which we will learn later.
+<h3 style="color:teal; border-bottom: 3px solid gray;"> <strong>Other Directories</strong></h3>
+<p>In Windows, System and Program files are usually
+    saved in C: drive. But, in Linux you would
+    find the system and program files in different
+    directories. For example, the boot files are
+    stored in the /boot directory and program and
+    software files can be found under /bin , device
+    files in /dev. Below are important Linux Directories
+    and short description of what they contain.
+    &nbsp;
+<p style="text-align: center; ">
+    <img width="100%" src="img/LinuxDirectories.png" />
+<p>These are most striking differences between
+    Linux and other Operating Systems.&nbsp;
+    There are more variations you will
+    observe when switching to Linux and
+    we will discuss them as we move along
+    in our tutorials.
+<h3 style="color:teal; border-bottom: 3px solid gray;"> Summary</h3>
+<ul>
+    <li style="margin-left: 0.75in; ">Unix/Linux uses a tree like hierarchical
+        file system.</li>
+    <li style="margin-left: 0.75in; ">There are no drives in Linux ,
+        unlike windows</li>
+    <li style="margin-left: 0.75in; ">Peripherals like&nbsp; hard drives
+        , cd rom , printers are also
+        considered files in Linux/Unix</li>
+    <li
+            style="margin-left: 0.75in; ">There are 3 types of user account
+        types 1) Regular , 2) Root
+        and 3) Service Account</li>
+    <li
+            style="margin-left: 0.75in; ">Root user is the super user
+        and has all administrative
+        privileges</li>
+    <li style="margin-left: 0.75in; ">Linux file naming convention
+        is case sensitive.
+        Thus , sample and SAMPLE
+        are 2 different files
+        in Linux/Unix operating
+        system</li>
+    <li style="margin-left: 0.75in; ">For every user /home/username
+        directory is created
+        which is called his
+        home directory.</li>
+</ul>
+
+
+</body>
